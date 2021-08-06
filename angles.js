@@ -1,13 +1,17 @@
 const firstNum = document.querySelector("#firstNum");
 const secNum = document.querySelector("#secNum");
 const thirdNum = document.querySelector("#thirdNum");
-const submitBtn = document.querySelector("#submit");
+const submitBtn = document.forms[0];
 const outputDiv = document.querySelector(".output");
 
-submitBtn.addEventListener("click", validateInput);
+submitBtn.addEventListener("submit", validateInput);
 
 
-function validateInput() {
+
+function validateInput(event) {
+
+    event.preventDefault();
+
     if (firstNum.value === "" || secNum.value === "" || thirdNum.value === "" ) {
         
         displayError("Enter the valid inputs");

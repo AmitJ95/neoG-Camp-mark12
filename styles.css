@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
-
-
 :root{
     font-family: 'Roboto Slab', serif; 
     font-size: large;   
@@ -25,7 +23,23 @@ input{
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
+
+.angles{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.line-1{
+    height: 1px;
+    background: black;
+}
+
 
 
 
