@@ -7,7 +7,6 @@ const outputDiv = document.querySelector(".output");
 submitBtn.addEventListener("submit", validateInput);
 
 
-
 function validateInput(event) {
 
     event.preventDefault();
