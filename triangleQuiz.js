@@ -1,7 +1,7 @@
 const triangleQuiz = document.forms[0];
-const correctAnswer = ["Obtuse Angle Triangle","Acute Angle Triangle"];
 const submitBtn = document.querySelector(".submitBtn");
 const outputDiv = document.querySelector(".output");
+const correctAnswer = ["Obtuse Angle Triangle","Acute Angle Triangle", "Right Angle Triangle"];
 submitBtn.addEventListener("click",calculateAns);
 
 
