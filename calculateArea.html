@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate Triangle Area</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
@@ -12,21 +13,35 @@
         <h3> 1/2 &#215 base &#215 height</h3>
         <form class="areaForm">
             <label for="Base">
-               Enter base: <input type="number" id="base"/>
+               Enter base: <input type="number" id="base" required>
             </label>
             <label for="height">
-                Enter Height: <input type="number" id="height"/>
+                Enter Height: <input type="number" id="height" required>
              </label>
         </form>
-        <button type="button" id="calculate">Calculate</button>
+        <button type="button" id="calculatebh">Calculate</button>
         
-        <label for="areaOutput">
-            Area of triangle is :
+        <label for="output">Area of triangle is :</label>
             <div class="areaOutput">
 
             </div>
-        </label>
-        <script src="/calculateArea.js"></script>
+        
+
+        <div>
+            <h2>When one side is given</h2>
+            <h2><b>&#8730<var>3/4</var><var>a<sup>2</sup></var></b></h2>
+            <label for="side">
+                Enter Side: <input type="number" id="side" required>
+             </label>
+        </div>
+         <button type="button" id="calculateSide">Calculate</button> 
+         
+         <label for="output">Area of triangle is :</label>
+            <div class="sideAreaOutput">
+
+            </div>
+            
+         <script src="/calculateArea.js"></script>
     </div>
 </body>
 </html>
