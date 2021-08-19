@@ -12,8 +12,13 @@
         <section>
             <h1>Enter the lengths of sides of right angle triangle </h1>
             <form class="angles">
-                <input type="number" name="oppSide" id="oppSide" required/>
-                <input type="number" name="adjSide"   id="adjSide"   required/>
+                <label for="heightValue">
+                    Height Value: <input type="number" name="oppSide" id="oppSide" required/>
+                </label>
+                <label for="baseValue">
+                    Base Value: <input type="number" name="adjSide"   id="adjSide"   required/>
+                </label>
+                
                 <button type="submit" name="checkHypot" id="checkHypot">Submit</button>
             </form>
 
